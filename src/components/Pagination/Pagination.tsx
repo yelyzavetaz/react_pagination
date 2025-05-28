@@ -72,7 +72,7 @@ export const Pagination: React.FC<Props> = ({
           className="page-link"
           href="#next"
           aria-disabled={isNextDisabled}
-          onClick={() => handleChangePage(currentPage + 1)}
+          onClick={() => !isNextDisabled && handleChangePage(currentPage + 1)}
         >
           »
         </a>
